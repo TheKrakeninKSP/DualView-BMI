@@ -1,15 +1,14 @@
-# **DualView BMI: AI-Based Body Mass Index Prediction from Facial Images**  
-
-[//]: # ![BMI Prediction](https://your-image-link.com) *(Optional: Add a relevant image here)*  
+# **DualView BMI: Regression Model for Body Mass Index Prediction from Facial Images**  
 
 ## **Overview**  
 **DualView BMI** is a regression-based model that predicts Body Mass Index (BMI) from facial images using **multi-view analysis**. By leveraging **deep learning for feature extraction** and **machine learning for regression**, this approach achieves high accuracy and generalizability.  
 
 ## **Key Features**  
-✅ **Multi-View Analysis**: Utilizes both **front** and **side** profile images for improved accuracy.  
-✅ **State-of-the-Art Feature Extraction**: Uses **MTCNN** for face detection and **FaceNet (InceptionResnetV1)** for feature extraction.  
-✅ **Optimized Regression Model**: Employs **XGBoost** for robust BMI prediction.  
-✅ **Scalable and Efficient**: Designed for **real-time health assessments** and **telemedicine applications**.  
+
+1. **Multi-View Analysis**: Utilizes both **front** and **side** profile images for improved accuracy.
+2. **State-of-the-Art Feature Extraction**: Uses **MTCNN** for face detection and **FaceNet (InceptionResnetV1)** for feature extraction.
+3.  **Optimized Regression Model**: Employs **XGBoost** for robust BMI prediction.
+4.   **Scalable and Efficient**: Designed for **real-time health assessments** and **telemedicine applications**.  
 
 ## **Project Workflow**  
 
@@ -29,25 +28,6 @@
 4. **Performance Evaluation**  
    - Evaluate using **Root Mean Squared Error (RMSE), Mean Absolute Error (MAE), R² Score, and Pearson Correlation Coefficient (PCC)**  
 
-## **Installation**  
-To set up the environment and run the project, follow these steps:  
-
-### **1. Clone the Repository**  
-```bash
-git clone https://github.com/yourusername/DualView-BMI.git
-cd DualView-BMI
-```
-
-### **2. Install Dependencies**  
-```bash
-pip install -r requirements.txt
-```
-
-### **3. Run the Model**  
-```bash
-python main.py --input_folder ./data/images
-```
-
 ## **Dataset**  
 This project utilizes the **Illinois Department of Corrections (IDOC) Mugshot Dataset**, which includes **60,000 images** with height and weight metadata for BMI calculation.  
 
@@ -60,8 +40,8 @@ This project utilizes the **Illinois Department of Corrections (IDOC) Mugshot Da
 ## **Comparison with Existing Methods**  
 | Method | Profile Used | MAE | RMSE | R² Score | PCC |
 |--------|-------------|-----|------|----------|-----|
-| Viola-Jones + ResNet | Front | 3.4047 | 4.6341 | 0.2023 | 0.4922 |
-| ResNet (Front & Side) | Front & Side | 3.1824 | 4.3180 | 0.2969 | 0.5679 |
+| Viola-Jones + ResNet | Front | 3.4047 | 4.6341 | 0.7823 | 0.8322 |
+| ResNet (Front & Side) | Front & Side | 3.1824 | 4.3180 | 0.5669 | 0.5679 |
 | MobileNet V2 | Front | 2.71 | 13.71 | 0.51 | - |
 
 The **proposed method significantly outperforms traditional approaches** in accuracy and reliability.  
